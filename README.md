@@ -101,6 +101,13 @@ sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf1
 scp VMware-ESXi-9.0.1.0.24957456-depot.zip orf@192.168.1.2:/bigdisk/orf/.
 scp VMware-vCenter-Server-Appliance-9.0.1.0.24957454-updaterepo.zip orf@192.168.1.2:/bigdisk/orf/.
 scp vmsp-vcfa-combined-9.0.1.0.24965341.tar orf@192.168.1.2:/bigdisk/orf/.
+scp VCF-OPS-Lifecycle-Manager-9.0.1.0.24960371.patch orf@192.168.1.2:/bigdisk/orf/.
+scp Operations-Upgrade-9.0.1.0.24960352.pak orf@192.168.1.2:/bigdisk/orf/.
+scp Operations-Logs-Appliance-9.0.1.0.24960345.pak orf@192.168.1.2:/bigdisk/orf/.
+scp vidb-external-9.0.1.0.24941398.tar orf@192.168.1.2:/bigdisk/orf/.
+scp VMware-NSX-upgrade-bundle-9.0.1.0.0.24952111-pre-check.pub orf@192.168.1.2:/bigdisk/orf/.
+scp VMware-NSX-upgrade-bundle-9.0.1.0.0.24952111.mub orf@192.168.1.2:/bigdisk/orf/.
+scp VMware-Cloud-Foundation-Operations-for-Networks.9.0.1.0.24950933.upgrade.bundle orf@192.168.1.2:/bigdisk/orf/.
 
 ```
 
