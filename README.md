@@ -95,6 +95,14 @@ sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf1
 ![GitHub](WebServer1.png)
 
 
+# Download and move to bigdisk software (My Windows machine does not alot of space so this has the done in batches)
+
+```
+scp VMware-ESXi-9.0.1.0.24957456-depot.zip orf@192.168.1.2:/bigdisk/orf/.
+scp VMware-vCenter-Server-Appliance-9.0.1.0.24957454-updaterepo.zip orf@192.168.1.2:/bigdisk/orf/.
+scp vmsp-vcfa-combined-9.0.1.0.24965341.tar orf@192.168.1.2:/bigdisk/orf/.
+
+```
 
 
 
