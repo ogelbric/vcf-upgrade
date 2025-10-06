@@ -98,6 +98,7 @@ sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf1
 # Download and move to bigdisk software (My Windows machine does not alot of space so this has the done in batches)
 
 ```
+#move from windows to Linux
 scp VMware-ESXi-9.0.1.0.24957456-depot.zip orf@192.168.1.2:/bigdisk/orf/.
 scp VMware-vCenter-Server-Appliance-9.0.1.0.24957454-updaterepo.zip orf@192.168.1.2:/bigdisk/orf/.
 scp vmsp-vcfa-combined-9.0.1.0.24965341.tar orf@192.168.1.2:/bigdisk/orf/.
@@ -108,6 +109,17 @@ scp vidb-external-9.0.1.0.24941398.tar orf@192.168.1.2:/bigdisk/orf/.
 scp VMware-NSX-upgrade-bundle-9.0.1.0.0.24952111-pre-check.pub orf@192.168.1.2:/bigdisk/orf/.
 scp VMware-NSX-upgrade-bundle-9.0.1.0.0.24952111.mub orf@192.168.1.2:/bigdisk/orf/.
 scp VMware-Cloud-Foundation-Operations-for-Networks.9.0.1.0.24950933.upgrade.bundle orf@192.168.1.2:/bigdisk/orf/.
+
+#sudo su
+#and copy into respective directories
+
+mv /bigdisk/orf/VMware-ESXi-9.0.1.0.24957456-depot.zip /bigdisk/VCF9/PROD/COMP/ESX_HOST/.
+mv /bigdisk/orf/VMware-vCenter-Server-Appliance-9.0.1.0.24957454-updaterepo.zip  /bigdisk/VCF9/PROD/COMP/VCENTER/.
+mv /bigdisk/orf/VMware-NSX-upgrade-bundle-9.0.1.0.0.24952111-pre-check.pub  /bigdisk/VCF9/PROD/COMP/NSXT_MANAGER/.
+mv /bigdisk/orf/VMware-NSX-upgrade-bundle-9.0.1.0.0.24952111.mub  /bigdisk/VCF9/PROD/COMP/NSXT_MANAGER/.
+mv /bigdisk/orf/VCF-OPS-Lifecycle-Manager-9.0.1.0.24960371.patch  /bigdisk/VCF9/PROD/COMP/VRSLCM/.
+mv /bigdisk/orf/vmsp-vcfa-combined-9.0.1.0.24965341.tar /bigdisk/VCF9/PROD/COMP/VRA/.
+mv /bigdisk/orf/Operations-Upgrade-9.0.1.0.24960352.pak  /bigdisk/VCF9/PROD/COMP/VROPS/.
 
 ```
 
