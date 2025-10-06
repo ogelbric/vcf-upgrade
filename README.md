@@ -94,4 +94,13 @@ sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf1
 ![GitHub](WebServer1.png)
 
 
+# Offline Depot metadata
+
+```
+https://support.broadcom.com/group/ecx/productfiles?displayGroup=VMware%20Cloud%20Foundation%209&release=9.0.1.0&os=&servicePk=534266&language=EN&groupId=534924&viewGroup=true
+
+# Note!: I had to login and then re-run the link to get to the metadata file
+
+```
+
 
