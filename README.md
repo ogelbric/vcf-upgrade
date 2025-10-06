@@ -148,7 +148,7 @@ service lcm restart
 ```
 # Add the new depot to OPS man
 
-![GitHub](DepotConnection1.png)
+![GitHub](DepotConection1.png)
 
 
 
