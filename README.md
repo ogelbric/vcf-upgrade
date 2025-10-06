@@ -51,10 +51,44 @@ sudo python3 -m http.server 9000
 
 #Test with above sript
 sudo python3 http_server_auth.py --bind 127.0.0.1 --user vcf --password vcf123! --port 8888 --directory depot
+```
+# Create cert
 
+```
+openssl genpkey -algorithm RSA -out key.pem
+openssl req -new -key key.pem -out csr.pem -subj "/C=US/ST=CA/L=Dallas/O=OrfGelbrich/OU=R&D/CN=linuxjum.lab.local"
+openssl x509 -req -in csr.pem -signkey key.pem -out cert.crt -days 365
+```
 
-a
+# Dir Structure
+
+```
+cd /bigdisk
+sudo mkdir VCF9/PROD
+sudo mkdir VCF9/PROD/COMP
+sudo mkdir VCF9/PROD/metadata
+sudo mkdir VCF9/PROD/COMP/ESX_HOST
+sudo mkdir VCF9/PROD/COMP/NSXT_MANAGER
+sudo mkdir VCF9/PROD/COMP/SDDC_MANAGER_VCF
+sudo mkdir VCF9/PROD/COMP/SDDC_MANAGER_VCF/Compatibility
+sudo mkdir VCF9/PROD/COMP/VCENTER
+sudo mkdir VCF9/PROD/COMP/VRA
+sudo mkdir VCF9/PROD/COMP/VRO
+sudo mkdir VCF9/PROD/COMP/VROPS
+sudo mkdir VCF9/PROD/COMP/VRSLCM
+sudo mkdir VCF9/PROD/metadata/manifest
+sudo mkdir VCF9/PROD/metadata/manifest/v1
+sudo mkdir VCF9/PROD/metadata/productVersionCatalog
+sudo mkdir VCF9/PROD/metadata/productVersionCatalog/v1
+sudo mkdir VCF9/PROD/VSAN
+sudo mkdir VCF9/PROD/VSAN/hcl
 
 ```
 
+# Start web server
+
+```
+a
+
+```
 
