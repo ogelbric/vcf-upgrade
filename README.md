@@ -152,6 +152,11 @@ service lcm restart
 ![GitHub](DepotConection1.png)
 
 
+# Upgrade Doc
+
+```
+https://www.arunnukula.com/post/vcf-9-0-to-vcf-9-0-1-management-components-upgrade-patching-runbook
+```
 
 
 
