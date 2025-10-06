@@ -123,6 +123,18 @@ mv /bigdisk/orf/Operations-Upgrade-9.0.1.0.24960352.pak  /bigdisk/VCF9/PROD/COMP
 
 ```
 
+# Error in adding Depot to OPS manager? 
+
+![GitHub](OPSError1.png)
+
+```
+# if you have this error the cert needs to be placed with SDDC manager
+
+
+```
+
+
+
 
 
 
