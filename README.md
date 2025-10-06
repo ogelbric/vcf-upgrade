@@ -116,7 +116,7 @@ scp .\vcf-9.0.1.0-offline-depot-metadata.zip orf@192.168.1.2:/tmp/.
 ```
 sudo cp /tmp/vcf-9.0.1.0-offline-depot-metadata.zip /bigdisk
 cd /bigdisk
-unzip vcf-9.0.1.0-offline-depot-metadata.zip
+sudo unzip vcf-9.0.1.0-offline-depot-metadata.zip
 
 ```
 
