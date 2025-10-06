@@ -60,40 +60,6 @@ openssl req -new -key key.pem -out csr.pem -subj "/C=US/ST=CA/L=Dallas/O=OrfGelb
 openssl x509 -req -in csr.pem -signkey key.pem -out cert.crt -days 365
 ```
 
-# Dir Structure
-
-```
-cd /bigdisk
-sudo mkdir VCF9/PROD
-sudo mkdir VCF9/PROD/COMP
-sudo mkdir VCF9/PROD/metadata
-sudo mkdir VCF9/PROD/COMP/ESX_HOST
-sudo mkdir VCF9/PROD/COMP/NSXT_MANAGER
-sudo mkdir VCF9/PROD/COMP/SDDC_MANAGER_VCF
-sudo mkdir VCF9/PROD/COMP/SDDC_MANAGER_VCF/Compatibility
-sudo mkdir VCF9/PROD/COMP/VCENTER
-sudo mkdir VCF9/PROD/COMP/VRA
-sudo mkdir VCF9/PROD/COMP/VRO
-sudo mkdir VCF9/PROD/COMP/VROPS
-sudo mkdir VCF9/PROD/COMP/VRSLCM
-sudo mkdir VCF9/PROD/metadata/manifest
-sudo mkdir VCF9/PROD/metadata/manifest/v1
-sudo mkdir VCF9/PROD/metadata/productVersionCatalog
-sudo mkdir VCF9/PROD/metadata/productVersionCatalog/v1
-sudo mkdir VCF9/PROD/VSAN
-sudo mkdir VCF9/PROD/VSAN/hcl
-
-```
-
-# Start web server
-
-```
-sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf123! --port 443 --directory /bigdisk/VCF9 --certfile ~/cert.crt --keyfile ~/key.pem
-```
-
-![GitHub](WebServer1.png)
-
-
 # Offline Depot metadata
 
 ```
@@ -119,6 +85,15 @@ cd /bigdisk
 sudo unzip vcf-9.0.1.0-offline-depot-metadata.zip
 
 ```
+
+# Start web server
+
+```
+sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf123! --port 443 --directory /bigdisk/VCF9 --certfile ~/cert.crt --keyfile ~/key.pem
+```
+
+![GitHub](WebServer1.png)
+
 
 
 
