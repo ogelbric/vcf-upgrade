@@ -141,7 +141,8 @@ ssh root@192.168.1.23
 /usr/bin/rehash_ca_certificates.sh
 #Import into java Keystore
 keytool -import -trustcacerts -file /etc/ssl/certs/enterprise-ca.pem -keystore /usr/lib/jvm/openjdk-java17-headless.x86_64/lib/security/cacerts -alias enterprise-ca
-#I wish we could:change :it
+#for PWD send me an e-mail
+#https://vmw-confluence.broadcom.net/pages/viewpage.action?pageId=2233408098&spaceKey=~dzorgnotti&title=VCF%2B9%2B-%2BOffline%2BDepot%2Bwith%2BEnterprise%2BCA
 #Restart the LCM app
 service lcm restart
 
