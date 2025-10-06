@@ -91,3 +91,7 @@ sudo mkdir VCF9/PROD/VSAN/hcl
 sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf123! --port 443 --directory /bigdisk/VCF9 --certfile ~/cert.crt --keyfile ~/key.pem
 ```
 
+![GitHub](WebServer1.png)
+
+
+
