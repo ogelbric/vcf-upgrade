@@ -130,8 +130,26 @@ mv /bigdisk/orf/Operations-Upgrade-9.0.1.0.24960352.pak  /bigdisk/VCF9/PROD/COMP
 ```
 # if you have this error the cert needs to be placed with SDDC manager
 
+#on jump host
+cp cert.crt enterprise-ca.pem
+
+#Move to SDDC manager
+scp enterprise-ca.pem root@192.168.1.23:/etc/ssl/certs/.
+#ssh to sddc manager
+ssh root@192.168.1.23
+#Import certs
+/usr/bin/rehash_ca_certificates.sh
+#Import into java Keystore
+keytool -import -trustcacerts -file /etc/ssl/certs/enterprise-ca.pem -keystore /usr/lib/jvm/openjdk-java17-headless.x86_64/lib/security/cacerts -alias enterprise-ca
+#I wish we could:change :it
+#Restart the LCM app
+service lcm restart
 
 ```
+# Add the new depot to OPS man
+
+![GitHub](DepotConnection1.png)
+
 
 
 
