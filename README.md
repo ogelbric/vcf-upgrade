@@ -105,6 +105,12 @@ https://support.broadcom.com/group/ecx/productfiles?displayGroup=VMware%20Cloud%
 
 ![GitHub](MetaData1.png)
 
+# Move file
+
+```
+scp .\vcf-9.0.1.0-offline-depot-metadata.zip orf@192.168.1.2:/tmp/.
+```
+
 
 
 
