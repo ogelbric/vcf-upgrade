@@ -46,6 +46,11 @@ sudo vi /etc/vfstab
 ```
 Following William: https://williamlam.com/2025/01/quick-tip-easily-host-vmware-cloud-foundation-vcf-offline-depot-using-python-simplehttpserver-with-authentication.html
 
+#Quick test for the web server
+sudo python3 -m http.server 9000
+
+#Test with above sript
+sudo python3 http_server_auth.py --bind 127.0.0.1 --user vcf --password vcf123! --port 8888 --directory depot
 
 
 a
