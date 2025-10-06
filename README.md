@@ -89,7 +89,7 @@ sudo unzip vcf-9.0.1.0-offline-depot-metadata.zip
 # Start web server
 
 ```
-sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf123! --port 443 --directory /bigdisk --certfile ~/cert.crt --keyfile ~/key.pem
+sudo python3 ./http_server_auth.py --bind 192.168.1.2 --user vcf --password vcf123! --port 443 --directory /bigdisk/VCF9 --certfile ~/cert.crt --keyfile ~/key.pem
 ```
 
 ![GitHub](WebServer1.png)
