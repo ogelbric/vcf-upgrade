@@ -9,13 +9,15 @@ And then a https server with auth is needed vor the VCF upgrade
 ```
 
 # Adding disk space
+```
+#in vCenter add a disk to your linux jump host VM
+```
 
 ![GitHub](AddDisk1.png)
 
 ```
-#in vCenter add a disk to your linux jump host VM
-#Disk shows up
-lsblk
+#Disk shows up as adb
+	lsblk
 #sdb                         8:16   0     2T  0 disk
 #
 # looks like sdb      8:16   0  150G  0 disk  is my new disk 
@@ -29,9 +31,9 @@ lsblk
 	sudo mkdir /bigdisk
 	sudo mount /dev/sdb1 /bigdisk
 	
-sudo blkid /dev/sdb1
-#/dev/sdb1: UUID="9dd30ea6-ddb9-4396-98fa-f5eeddface3d" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="4c81fe73-c946-41b4-9890-268dd2ca2683"
+	sudo blkid /dev/sdb1
 
+#/dev/sdb1: UUID="9dd30ea6-ddb9-4396-98fa-f5eeddface3d" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="4c81fe73-c946-41b4-9890-268dd2ca2683"
 #UUID=9dd30ea6-ddb9-4396-98fa-f5eeddface3d /mnt/mydrive ext4 defaults 0 0
 
 #add this to vfstab: /dev/disk/by-uuid/9dd30ea6-ddb9-4396-98fa-f5eeddface3d /mnt/mydrive ext4 defaults 0 0
