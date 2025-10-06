@@ -10,6 +10,8 @@ And then a https server with auth is needed vor the VCF upgrade
 
 # Adding disk space
 
+![GitHub](AddDisk1.png)
+
 ```
 #in vCenter add a disk to your linux jump host VM
 #Disk shows up
